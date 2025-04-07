@@ -127,10 +127,20 @@ button {
 }
 
 /* Banner Super Sale */
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .banner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 5%;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #E7E7EA;
 }
 
 .super-sale-banner {
@@ -145,6 +155,8 @@ button {
     flex: 1;
     display: flex;
     flex-direction: column;
+    width: 50%;
+    height: 50%;
 }
 
 .banner-image img {
