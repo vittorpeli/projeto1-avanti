@@ -10,10 +10,10 @@
 <body>
   
   <div class="notification-bar">
-    <p>Frete grátis para todo o Brasil em compras acima de R$200,00.</p>
+    <p>Ganhe <span>$10,00</span> de desconto no seu primeiro pedido. <strong>Utilize o cupom</strong> DESCONTO10</p>
   </div>
 
-  <header>
+  <header class="wrapper">
     <div class="header-container">
       <div class="logo">
         <a href="index.html"><img src="assets/logo-avanti.png" alt="Avanti"></a>
@@ -24,12 +24,19 @@
       </div>
       <div class="user-actions">
         <a href="login.html" class="login">
-          <i class="fas fa-user"></i>
-          <span>Entre ou<br>Cadastre-se</span>
+          <div class="login-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="login-text">
+            <span>Olá,</span>
+            <span class="username">Nome cliente!</span>
+          </div>
         </a>
         <a href="cart.html" class="cart">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="cart-count">0</span>
+          <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </div>
         </a>
       </div>
     </div>
@@ -55,28 +62,27 @@
         <img src="assets/chair.png" alt="Cadeira com roupas dobradas">
       </div>
       <div class="banner-text">
-        <h1>SUPER<span>SALE</span></h1>
+        <h1><span class="super">SUPER</span><span class="sale">SALE</span></h1>
         <h2>ITENS SELECIONADOS COM ATÉ</h2>
         <div class="discount">50%OFF</div>
       </div>
     </div>
   </section>
 
-  <section class="products-section">
+  <section class="products-section wrapper">
     <div class="section-header">
       <h2>Lançamentos</h2>
       <a href="#" class="see-all">Ver mais</a>
     </div>
     
-    <div class="product-carousel">
+    <div class="product-grid wrapper">
       <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
       
-      <div class="product-list">
-        <div class="product-card">
+      <ul class="product-list">
+        <li class="product-card">
           <div class="product-badge new">NOVO</div>
           <div class="product-image">
             <img src="assets/tshirt.png" alt="Camiseta Branca">
-            <button class="quick-view"><i class="fas fa-eye"></i></button>
           </div>
           <div class="product-info">
             <h3>Camiseta Básica Lisa de Algodão</h3>
@@ -87,17 +93,15 @@
             </div>
             <div class="installment">ou 4x de R$ 11,98 sem juros</div>
             <div class="product-actions">
-              <button class="add-to-cart">Adicionar à Sacola</button>
               <button class="buy-now">Comprar</button>
             </div>
           </div>
-        </div>
+        </li>
         
-        <div class="product-card">
+        <li class="product-card">
           <div class="product-badge new">NOVO</div>
           <div class="product-image">
             <img src="assets/tshirt.png" alt="Camiseta Branca">
-            <button class="quick-view"><i class="fas fa-eye"></i></button>
           </div>
           <div class="product-info">
             <h3>Camiseta Básica Lisa de Algodão</h3>
@@ -108,17 +112,15 @@
             </div>
             <div class="installment">ou 4x de R$ 11,98 sem juros</div>
             <div class="product-actions">
-              <button class="add-to-cart">Adicionar à Sacola</button>
               <button class="buy-now">Comprar</button>
             </div>
           </div>
-        </div>
+        </li>
         
-        <div class="product-card">
+        <li class="product-card">
           <div class="product-badge new">NOVO</div>
           <div class="product-image">
             <img src="assets/tshirt.png" alt="Camiseta Branca">
-            <button class="quick-view"><i class="fas fa-eye"></i></button>
           </div>
           <div class="product-info">
             <h3>Camiseta Básica Lisa de Algodão</h3>
@@ -129,17 +131,15 @@
             </div>
             <div class="installment">ou 4x de R$ 11,98 sem juros</div>
             <div class="product-actions">
-              <button class="add-to-cart">Adicionar à Sacola</button>
               <button class="buy-now">Comprar</button>
             </div>
           </div>
-        </div>
+        </li>
         
-        <div class="product-card">
+        <li class="product-card">
           <div class="product-badge new">NOVO</div>
           <div class="product-image">
             <img src="assets/tshirt.png" alt="Camiseta Branca">
-            <button class="quick-view"><i class="fas fa-eye"></i></button>
           </div>
           <div class="product-info">
             <h3>Camiseta Básica Lisa de Algodão</h3>
@@ -150,17 +150,15 @@
             </div>
             <div class="installment">ou 4x de R$ 11,98 sem juros</div>
             <div class="product-actions">
-              <button class="add-to-cart">Adicionar à Sacola</button>
               <button class="buy-now">Comprar</button>
             </div>
           </div>
-        </div>
+        </li>
         
-        <div class="product-card">
+        <li class="product-card">
           <div class="product-badge new">NOVO</div>
           <div class="product-image">
             <img src="assets/tshirt.png" alt="Camiseta Branca">
-            <button class="quick-view"><i class="fas fa-eye"></i></button>
           </div>
           <div class="product-info">
             <h3>Camiseta Básica Lisa de Algodão</h3>
@@ -171,15 +169,16 @@
             </div>
             <div class="installment">ou 4x de R$ 11,98 sem juros</div>
             <div class="product-actions">
-              <button class="add-to-cart">Adicionar à Sacola</button>
               <button class="buy-now">Comprar</button>
             </div>
           </div>
-        </div>
-      </div>
-      
+        </li>
+      </ul>
+
       <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
     </div>
+
+    
     
     <div class="pagination">
       <span class="dot active"></span>
@@ -204,7 +203,7 @@
     </div>
   </section>
 
-  <section class="features">
+  <section class="features wrapper">
     <div class="features-container">
       <div class="features-content">
         <h2>LOREM IPSUM</h2>
@@ -243,7 +242,7 @@
     </div>
   </section>
 
-  <section class="featured-product">
+  <section class="featured-product wrapper">
     <div class="featured-product-container">
       <div class="featured-image">
         <img src="assets/caneca1.png" alt="Caneca Avanti">
@@ -258,21 +257,20 @@
     </div>
   </section>
 
-  <section class="products-section">
+  <section class="products-section wrapper">
     <div class="section-header">
       <h2>Lançamentos</h2>
       <a href="#" class="see-all">Ver mais</a>
     </div>
     
-    <div class="product-carousel">
+    <div class="product-grid">
       <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
       
-      <div class="product-list">
-        <div class="product-card">
+      <ul class="product-list">
+        <li class="product-card">
           <div class="product-badge new">NOVO</div>
           <div class="product-image">
             <img src="assets/tshirt.png" alt="Camiseta Branca">
-            <button class="quick-view"><i class="fas fa-eye"></i></button>
           </div>
           <div class="product-info">
             <h3>Camiseta Básica Lisa de Algodão</h3>
@@ -283,17 +281,15 @@
             </div>
             <div class="installment">ou 4x de R$ 11,98 sem juros</div>
             <div class="product-actions">
-              <button class="add-to-cart">Adicionar à Sacola</button>
               <button class="buy-now">Comprar</button>
             </div>
           </div>
-        </div>
+        </li>
         
-        <div class="product-card">
+        <li class="product-card">
           <div class="product-badge new">NOVO</div>
           <div class="product-image">
             <img src="assets/tshirt.png" alt="Camiseta Branca">
-            <button class="quick-view"><i class="fas fa-eye"></i></button>
           </div>
           <div class="product-info">
             <h3>Camiseta Básica Lisa de Algodão</h3>
@@ -304,17 +300,15 @@
             </div>
             <div class="installment">ou 4x de R$ 11,98 sem juros</div>
             <div class="product-actions">
-              <button class="add-to-cart">Adicionar à Sacola</button>
               <button class="buy-now">Comprar</button>
             </div>
           </div>
-        </div>
+        </li>
         
-        <div class="product-card">
+        <li class="product-card">
           <div class="product-badge new">NOVO</div>
           <div class="product-image">
             <img src="assets/tshirt.png" alt="Camiseta Branca">
-            <button class="quick-view"><i class="fas fa-eye"></i></button>
           </div>
           <div class="product-info">
             <h3>Camiseta Básica Lisa de Algodão</h3>
@@ -325,17 +319,15 @@
             </div>
             <div class="installment">ou 4x de R$ 11,98 sem juros</div>
             <div class="product-actions">
-              <button class="add-to-cart">Adicionar à Sacola</button>
               <button class="buy-now">Comprar</button>
             </div>
           </div>
-        </div>
+        </li>
         
-        <div class="product-card">
+        <li class="product-card">
           <div class="product-badge new">NOVO</div>
           <div class="product-image">
             <img src="assets/tshirt.png" alt="Camiseta Branca">
-            <button class="quick-view"><i class="fas fa-eye"></i></button>
           </div>
           <div class="product-info">
             <h3>Camiseta Básica Lisa de Algodão</h3>
@@ -346,17 +338,15 @@
             </div>
             <div class="installment">ou 4x de R$ 11,98 sem juros</div>
             <div class="product-actions">
-              <button class="add-to-cart">Adicionar à Sacola</button>
               <button class="buy-now">Comprar</button>
             </div>
           </div>
-        </div>
+        </li>
         
-        <div class="product-card">
+        <li class="product-card">
           <div class="product-badge new">NOVO</div>
           <div class="product-image">
             <img src="assets/tshirt.png" alt="Camiseta Branca">
-            <button class="quick-view"><i class="fas fa-eye"></i></button>
           </div>
           <div class="product-info">
             <h3>Camiseta Básica Lisa de Algodão</h3>
@@ -367,12 +357,11 @@
             </div>
             <div class="installment">ou 4x de R$ 11,98 sem juros</div>
             <div class="product-actions">
-              <button class="add-to-cart">Adicionar à Sacola</button>
               <button class="buy-now">Comprar</button>
             </div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
       
       <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
     </div>
@@ -385,31 +374,31 @@
   </section>
 
   <!-- Call to Action Banner -->
-  <section class="cta-banner">
-    <div class="cta-content">
-      <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+  <section class="cta-section">
+    <div class="cta-banner">
+      <div class="cta-content">
+        <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+      </div>
     </div>
   </section>
 
-  <section class="newsletter">
+  <section class="newsletter-section wrapper">
+    <h2>Cadastre-se na nossa <span>newsletter!</span></h2>
     <div class="newsletter-container">
-      <h2>Cadastre-se na nossa newsletter!</h2>
       <form class="newsletter-form">
-        <div class="form-inputs">
-          <input type="text" placeholder="Nome completo">
-          <input type="email" placeholder="Email válido aqui">
-          <div class="form-checkbox">
-            <input type="checkbox" id="terms">
-            <label for="terms">Tenho conhecimento da Política de Privacidade</label>
-          </div>
-        </div>
-        <button type="submit" class="subscribe-btn">CADASTRAR</button>
+        <input type="text" placeholder="Digite seu nome" />
+        <input type="email" placeholder="Digite seu e-mail" />
+        <label class="form-checkbox">
+          <input type="checkbox" />
+          Estou de acordo com a <a href="#">Política de Privacidade</a>
+        </label>
+        <button type="submit" class="subscribe-btn">Cadastrar</button>
       </form>
     </div>
   </section>
 
-  <footer>
-    <div class="footer-container">
+  <footer class="wrapper">
+    <div class="footer-main">
       <div class="footer-logo">
         <img src="assets/logo-avanti.png" alt="Avanti">
         <div class="social-media">
@@ -422,49 +411,47 @@
       
       <div class="footer-links">
         <div class="footer-column">
-          <h3>Institucional</h3>
-          <ul>
-            <li><a href="#">Quem Somos</a></li>
-            <li><a href="#">Nossas Lojas</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Política de Cookies</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
+          <h4>Institucional</h4>
+          <h5>Sobre Nós</h5>
+          <h5>Nossas Lojas</h5>
+          <h5>Privacidade e Segurança</h5>
+          <h5>Termos e Condições</h5>
         </div>
         
         <div class="footer-column">
           <h3>Central de ajuda</h3>
-          <ul>
-            <li><a href="#">Como Comprar</a></li>
-            <li><a href="#">Formas de Pagamento</a></li>
-            <li><a href="#">Entregas</a></li>
-            <li><a href="#">Trocas e Devoluções</a></li>
-            <li><a href="#">Fale Conosco</a></li>
-          </ul>
+          <h4>Central de ajuda</h4>
+          <h5>Fale Conosco</h5>
+          <h5>Frete e Entrega</h5>
+          <h5>Trocas e Devoluções</h5>
+          <h5>Formas de Pagamento</h5>
+          <h5>FAQ</h5>
         </div>
         
         <div class="footer-column">
-          <h3>Atendimento</h3>
-          <ul>
-            <li><a href="#">Telefone: (11) 1234-5678</a></li>
-            <li><a href="#">Horário de atendimento:</a></li>
-            <li><a href="#">Segunda a Sexta: 08:00h às 18:00h</a></li>
-            <li><a href="#">Sábados: 08:00h às 13:00h</a></li>
-            <li><a href="#">Endereço: Av. Brasil, 123 - São Paulo - SP</a></li>
+          <h4>Atendimento</h4>
+          <h5>Telefone: (00) 1234-5678</h5>
+          <h5>E-mail: exemplo@exemplo.com.br</h5>
+          <h5><strong>Horário de atendimento:</strong></h5>
+          <h5>Segunda a Sábado: 07h00 às 23h00</h5>
+          <h5>Domingos e Feriados: 07h00 às 21h00</h5>
           </ul>
         </div>
       </div>
     </div>
     
-    <div class="payment-methods">
+    <div class="payment-icons">
       <img src="assets/payment-methods.png" alt="Formas de pagamento">
     </div>
     
-    <div class="footer-bottom">
+    <div class="footer-info">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit tellus, fringilla id magna eget, sodales vulputate arcu. Phasellus porta massa in quam vulputate sagittis. Nulla facilisi. Morbi lacinia vulputate risus.</p>
-      <div class="security-badges">
-        <img src="assets/security-badges.png" alt="Selos de segurança">
-      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <img src="assets/security-badges.png" alt="Selos de segurança">
+      <img src="assets/logo-avanti.png" alt="Avanti" />
+      <img src="assets/logo-vtex.png" alt="VTEX" />
     </div>
   </footer>
 
